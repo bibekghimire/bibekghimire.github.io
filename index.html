@@ -3,57 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bibek Ghimire | Portfolio</title>
+  <title>Bibek Ghimire | Backend Developer</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f8f9fa;
+      background: #f4f6f9;
       color: #333;
     }
     header {
-      background: #1e1e2f;
-      color: white;
+      background: #1f2937; /* Dark slate */
+      color: #fff;
       padding: 2rem 1rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
     }
     header p {
-      margin: 0.5rem 0 0;
-      font-size: 1rem;
-      color: #ccc;
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #d1d5db;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    .project {
-      background: white;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    section {
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     }
-    .project h2 {
+    section h2 {
       margin-top: 0;
+      color: #1f2937;
+      border-bottom: 2px solid #2563eb;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .project {
+      margin-bottom: 1rem;
+    }
+    .project h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #111827;
+    }
+    .project p {
+      margin: 0.5rem 0 0.8rem;
     }
     .project a {
-      color: #007bff;
+      color: #2563eb;
       text-decoration: none;
+      font-weight: 500;
     }
     .project a:hover {
       text-decoration: underline;
+    }
+    .contact-links a {
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+    .contact-links a:hover {
+      background: #1d4ed8;
     }
     footer {
       text-align: center;
       font-size: 0.9rem;
       padding: 2rem 1rem;
-      color: #999;
+      color: #6b7280;
+    }
+    footer a {
+      color: #2563eb;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -61,45 +96,67 @@
 
   <header>
     <h1>Bibek Ghimire</h1>
-    <p>Backend Developer | Python, Django, DRF</p>
+    <p>Backend Developer • Python | Django | DRF</p>
   </header>
 
   <div class="container">
+    
+    <section id="about">
+      <h2>👋 About Me</h2>
+      <p>
+        I’m a backend developer passionate about building robust and scalable systems using Python, Django, and Django REST Framework. Currently, I’m sharpening my skills in API design and learning modern best practices for web development.
+      </p>
+      <p>I enjoy clean code, coffee debates ☕, and contributing to open-source projects on GitHub.</p>
+    </section>
 
-		<div class="project">
-		  <h2>📦 DCC</h2>
-		  <p>Implementation of Digital Citizen Charter in an Interactive way</p>
-		  <a href="https://github.com/bibekghimire/dcc" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-		</div>
+    <section id="projects">
+      <h2>📦 Projects</h2>
 
-		<div class="project">
-		  <h2>🔄 Karaputar <small>(renaming soon)</small></h2>
-		  <p>A Project for posting Literatures like Poems, Stories, Gajal etc. </p>
-		  <a href="https://github.com/bibekghimire/karaputar" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-		</div>
-		<div class="project">
-		  <h2>🔄 Literature Post <small></small></h2>
-		  <p>A Project for posting Literatures like Poems, Stories, Gajal etc.</p>
-		  <a href="https://github.com/bibekghimire/literaturepost" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-		</div>
-		<div class="project">
-		  <h2>📇 Phonebook</h2>
-		  <p>Phone Book Windows Application developed for storing some contact Info.</p>
-		  <a href="https://github.com/bibekghimire/phonebook" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-		</div>
+      <div class="project">
+        <h3>DCC</h3>
+        <p>Implementation of Digital Citizen Charter in an interactive way.</p>
+        <a href="https://github.com/bibekghimire/dcc" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
 
-		<div class="project">
-		  <h2>📚 Library</h2>
-		  <p>A Library App to Add books and Borrow information to registered User.</p>
-		  <a href="https://github.com/bibekghimire/library" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-		</div>
+      <div class="project">
+        <h3>Karaputar</h3><small>renaming soon</small>
+        <p>A platform for posting literature: poems, stories, gajal, and more.</p>
+        <a href="https://github.com/bibekghimire/karaputar" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
 
-   
+      <div class="project">
+        <h3>Literature Post</h3>
+        <p>A Django-based project for posting literature content with user management.</p>
+        <a href="https://github.com/bibekghimire/literaturepost" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Phonebook</h3>
+        <p>A Windows application for storing and managing contact information.</p>
+        <a href="https://github.com/bibekghimire/phonebook" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Library</h3>
+        <p>A library management system to add books and manage borrow records.</p>
+        <a href="https://github.com/bibekghimire/library" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📬 Contact</h2>
+      <p>Want to collaborate or chat about backend systems over coffee?</p>
+      <div class="contact-links">
+        <a href="mailto:bibekghimire99@gmail.com">Email Me</a>
+        <a href="https://github.com/bibekghimire" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/bibek-ghimire-8ab332177/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
 
   </div>
 
   <footer>
-    © 2025 Bibek Ghimire • Hosted on GitHub Pages
+    © 2025 Bibek Ghimire • Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
   </footer>
 
 </body>
